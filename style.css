@@ -1,0 +1,269 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #f9f6f2 0%, #ede3d1 100%);
+  color: #392e18;
+}
+
+nav {
+  width: 100%;
+  background: rgba(234, 225, 208, 0.97);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 1px 8px rgba(120, 92, 30, 0.04);
+}
+
+.nav-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  height: 62px;
+}
+
+.nav-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #7e6c4d;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 32px;
+}
+
+nav ul li a {
+  color: #69593c;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.09em;
+  transition: color 0.2s;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  color: #3a270a;
+}
+
+.hero {
+  padding: 80px 0 48px 0;
+  background: linear-gradient(120deg, #f5ece0 0%, #f6e7cd 100%);
+}
+
+.hero-inner {
+  max-width: 820px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hero-icon {
+  font-size: 3.4em;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+.hero-accent {
+  color: #a49474;
+  font-weight: 700;
+}
+
+.hero-lead {
+  font-size: 1.25em;
+  margin-top: 12px;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+.hero-sub {
+  color: #816e4e;
+  font-size: 0.98em;
+  margin-left: 4px;
+}
+
+.features {
+  max-width: 940px;
+  margin: 0 auto 48px auto;
+  display: flex;
+  justify-content: center;
+  gap: 38px;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  background: #f3ece4;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(120, 92, 30, 0.07);
+  padding: 34px 28px;
+  max-width: 270px;
+  min-width: 200px;
+  flex: 1 1 220px;
+  text-align: center;
+  margin: 12px 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature-icon {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+}
+
+.feature-title {
+  font-size: 1.22em;
+  font-weight: bold;
+  margin-bottom: 7px;
+  color: #8b7b60;
+}
+
+.feature-desc {
+  font-size: 1em;
+  color: #5d4b31;
+}
+
+section {
+  max-width: 840px;
+  margin: 48px auto 0 auto;
+  padding: 0 20px 32px 20px;
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+h1, h2 {
+  color: #8b7b60;
+  margin-bottom: 18px;
+  letter-spacing: 0.5px;
+}
+
+.steps-flow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 30px;
+  margin-bottom: 14px;
+  justify-content: center;
+}
+
+.step {
+  background: #f3ece4;
+  border-radius: 12px;
+  padding: 24px 18px;
+  min-width: 180px;
+  max-width: 220px;
+  flex: 1 1 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step-icon {
+  font-size: 2em;
+  margin-bottom: 7px;
+}
+
+.step-title {
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #a49474;
+  font-size: 1.06em;
+}
+
+.step-desc {
+  font-size: 0.98em;
+  color: #5d4b31;
+  text-align: center;
+}
+
+.note {
+  background: #ede3d1;
+  border-radius: 8px;
+  padding: 12px 18px;
+  margin-top: 22px;
+  font-size: 1.08em;
+  color: #874600;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  font-family: inherit;
+  gap: 12px;
+  min-height: 40px;
+}
+
+.note-icon {
+  font-size: 1.5em;
+  flex-shrink: 0;
+}
+
+.note-text {
+  display: inline;
+  font-size: 1em;
+}
+
+.footer {
+  background: #ece4d8;
+  text-align: center;
+  padding: 30px 8px 14px 8px;
+  color: #816e4e;
+  font-size: 1.05em;
+  margin-top: 36px;
+  border-radius: 18px 18px 0 0;
+}
+
+.footer-title {
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.footer-info {
+  display: inline-block;
+  margin: 0 7px;
+}
+
+@media (max-width: 900px) {
+  .features, .steps-flow {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  .hero-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 700px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 10px 12px;
+  }
+  nav ul {
+    margin-top: 8px;
+    flex-direction: column;
+    width: 100%;
+  }
+  nav ul li {
+    margin: 8px 0 0 0;
+  }
+  section {
+    margin: 28px 0 0 0;
+    padding: 0 6px 24px 6px;
+  }
+}
