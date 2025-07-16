@@ -161,7 +161,7 @@ nav ul li a:focus {
 
 .feature-desc {
   font-size: 1em;
-  color: #000;
+  color: black;
 }
 
 section {
@@ -216,7 +216,7 @@ h1, h2 {
 
 .step-desc {
   font-size: 1em;
-  color: #000;
+  color: black;
 }
 
 .step-warning-card {
