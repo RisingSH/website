@@ -87,6 +87,7 @@ nav ul li a:focus {
 }
 
 .hero-lead {
+  color: #816e4e;
   font-size: 1.25em;
   margin-top: 12px;
   margin-bottom: 0;
@@ -94,8 +95,7 @@ nav ul li a:focus {
 }
 
 .hero-sub {
-  color: #816e4e;
-  font-size: 1.1em;
+  font-size: 1.25em;
   margin-left: 4px;
 }
 
