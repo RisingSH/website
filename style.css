@@ -94,6 +94,24 @@ nav ul li a:focus {
   margin-left: 4px;
 }
 
+.hero-textbox {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.6);
+  border: 2px solid #a49474;
+  border-radius: 12px;
+  padding: 24px 32px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  max-width: 720px;
+}
+
+.hero-textbox .hero-lead {
+  margin-top: 0;
+}
+
+.hero-textbox .hero-sub {
+  margin-top: 12px;
+}
+
 .features {
   max-width: 940px;
   margin: 0 auto 48px auto;
