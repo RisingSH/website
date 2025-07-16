@@ -214,19 +214,10 @@ h1, h2 {
 }
 
 .step-warning-card {
-  background: #f3ece4;
-  border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(120, 92, 30, 0.07);
-  padding: 28px 28px;
   margin: 0 auto;
-  max-width: 340px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 14px;
+  text-align: center;
   font-size: 1.14em;
   color: #5d4b31;
-  text-align: center;
   font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
   font-weight: 500;
   grid-column: span 3;
