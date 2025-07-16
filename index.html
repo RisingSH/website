@@ -10,7 +10,8 @@
 <body>
   <nav>
     <div class="nav-container">
-      <div class="nav-title">RiSH</div>
+      <div class="nav-title">
+      <img src="assets/logo.png" alt="RiSH Logo" class="nav-logo">RiSH</div>
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#how">How it Works</a></li>
@@ -144,9 +145,31 @@
   
   <section id="contact">
     <h2>Contact Us</h2>
-    <div class="coming-soon">
-      <span style="color:#a68b50;">Coming soon ...</span>
-    </div>
+    <form
+      action="https://formspree.io/f/xdkdodjg"
+      method="POST"
+      class="contact-form"
+    >
+      <div class="contact-row">
+        <label>
+          First Name:
+          <input type="text" name="first-name" required placeholder="First Name">
+        </label>
+        <label>
+          Last Name:
+          <input type="text" name="last-name" required placeholder="Last Name">
+        </label>
+      </div>
+      <label>
+        Email:
+        <input type="email" name="email" required placeholder="Email">
+      </label>
+      <label>
+        Message:
+        <textarea name="message" required rows="5" placeholder="Message" ></textarea>
+      </label>
+      <button type="submit">Send</button>
+    </form>
   </section>
 
   <footer class="footer">
