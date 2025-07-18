@@ -601,3 +601,18 @@ nav ul li a:focus {
     margin: 8px 16px;
   }
 }
+.step-card .step-image img {
+  width: 84px !important;
+  height: 84px !important;
+  object-fit: contain;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.feature-image img {
+  width: 104px;
+  height: 104px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 12px auto;
+}
