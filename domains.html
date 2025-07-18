@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Explore Research Domains | RiSH</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #f9f6f2 0%, #ede3d1 100%);
+      font-family: 'Montserrat', sans-serif;
+      color: #392e18;
+      margin: 0;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #8b7b60;
+      margin-bottom: 24px;
+      font-size: 2em;
+    }
+
+    .domain-intro {
+      max-width: 800px;
+      margin: 0 auto 40px auto;
+      font-size: 1.1em;
+      line-height: 1.7;
+      color: #5c4a2f;
+      text-align: center;
+      padding: 0 16px;
+      font-family: 'Merriweather', serif;
+    }
+
+    .domain-boxes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 28px;
+    }
+
+    .domain-card {
+      background: #f3ece4;
+      border-radius: 16px;
+      padding: 48px 24px;
+      width: 260px;
+      box-shadow: 0 4px 18px rgba(120, 92, 30, 0.08);
+      text-align: center;
+      font-size: 1.15em;
+      font-weight: 600;
+      color: #7d6a49;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: popin 0.5s forwards;
+    }
+
+    .domain-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 24px rgba(120, 92, 30, 0.15);
+    }
+
+    @keyframes popin {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <h2>Explore Research Domains</h2>
+    <p class="domain-intro">
+    Whether you're passionate about computer vision applications, curious about the future of healthcare powered by AI, fascinated by how language and vision combine, eager to explore the depths of language models, or driven to measure uncertainty in data — RiSH offers mentorship to help you turn ideas into publishable research.
+    </p>
+
+
+    <div class="domain-boxes">
+      <div class="domain-card" style="animation-delay: 0s;">Computer Vision</div>
+      <div class="domain-card" style="animation-delay: 0.1s;">AI for Healthcare</div>
+      <div class="domain-card" style="animation-delay: 0.2s;">Large Language Models</div>
+      <div class="domain-card" style="animation-delay: 0.3s;">Vision Language Models</div>
+      <div class="domain-card" style="animation-delay: 0.4s;">Uncertainty Quantification</div>
+    </div>
+  </section>
+</body>
+</html>
