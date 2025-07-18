@@ -145,10 +145,38 @@
   <div class="section-gradient"></div>
   
   <section id="success">
-    <h2>RiSH Success Stories</h2>
-    <div class="coming-soon">
-      <span style="color:#a68b50;">Coming soon ...</span>
+<h2>RiSH Success Stories</h2>
+
+<div class="testimonial-slider">
+  <div class="testimonial-track">
+    <div class="testimonial-card active">
+      <img src="assets/avatar_male.png" alt="Muhammed Alaa" class="testimonial-img">
+      <h3 class="testimonial-name">Muhammed Alaa</h3>
+      <p class="testimonial-role">Graduate Student, Egypt</p>
+      <p class="testimonial-text">
+        “Thanks to RiSH, I not only completed my first paper but also gained the confidence to pursue a research-based career.”
+      </p>
     </div>
+
+    <div class="testimonial-card">
+      <img src="assets/avatar_male.png" alt="Mohammed Elkhiat" class="testimonial-img">
+      <h3 class="testimonial-name">Mohammed Elkhiat</h3>
+      <p class="testimonial-role">Undergrad Student, Egypt</p>
+      <p class="testimonial-text">
+        “RiSH gave me the structure and mentorship I needed to turn a passion project into a publishable study.”
+      </p>
+    </div>
+  </div>
+
+  <div class="testimonial-controls">
+    <button class="arrow" id="prev">&#10094;</button>
+    <div class="dots">
+      <span class="dot active" data-index="0"></span>
+      <span class="dot" data-index="1"></span>
+    </div>
+    <button class="arrow" id="next">&#10095;</button>
+  </div>
+</div>
   </section>
 
   <div class="section-gradient"></div>
@@ -189,5 +217,39 @@
       <span class="footer-info">© 2025 RiSH</span>
     </div>
   </footer>
+
+<script>
+  const cards = document.querySelectorAll('.testimonial-card');
+  const dots = document.querySelectorAll('.dot');
+  const prev = document.getElementById('prev');
+  const next = document.getElementById('next');
+
+  let current = 0;
+
+  function showSlide(index) {
+    cards.forEach(c => c.classList.remove('active'));
+    dots.forEach(d => d.classList.remove('active'));
+    cards[index].classList.add('active');
+    dots[index].classList.add('active');
+    current = index;
+  }
+
+  prev.addEventListener('click', () => {
+    const index = (current - 1 + cards.length) % cards.length;
+    showSlide(index);
+  });
+
+  next.addEventListener('click', () => {
+    const index = (current + 1) % cards.length;
+    showSlide(index);
+  });
+
+  dots.forEach(dot => {
+    dot.addEventListener('click', () => {
+      const index = parseInt(dot.dataset.index);
+      showSlide(index);
+    });
+  });
+</script>
 </body>
 </html>
